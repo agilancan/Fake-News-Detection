@@ -1,2 +1,6 @@
 /data/raw
 .env
+venv
+__pycache__
+/model/best_model/
+secrets/
