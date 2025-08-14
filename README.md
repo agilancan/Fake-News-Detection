@@ -55,6 +55,7 @@ The backend handles **fake news classification**, **trusted source retrieval** f
 ```
 
 ### 5. **Setup & Installation**
+```
 1️⃣ Clone Repository
 git clone https://github.com/agilancan/Fake-News-Detection.git
 cd Fake-News-Detection
@@ -106,6 +107,7 @@ Backend deployed on Render.
 
 Connected to frontend hosted on Vercel.
 
+```
 ### 6. **Development Team**
 -Backend, Model, RAG & Infrastructure => Agilan Sivakumaran, Rodrigo Rangel-alvarado
 -Frontend, Intergration & Deployment => Thedyson eduard Luzon, Yash Patel
