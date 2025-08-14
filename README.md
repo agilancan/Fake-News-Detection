@@ -37,6 +37,7 @@ The backend handles **fake news classification**, **trusted source retrieval** f
 
 ```
 ### 4. **Project Structure**
+```
 .
 ├── data/
 │   ├── raw/                # Original dataset
@@ -51,6 +52,7 @@ The backend handles **fake news classification**, **trusted source retrieval** f
 ├── app.py                  # Flask/FastAPI backend API
 ├── requirements.txt
 └── README.md
+```
 
 ### 5. **Setup & Installation**
 1️⃣ Clone Repository
