@@ -106,10 +106,10 @@ API Hosting
 ```
 | Component     | Choice             | Reason                               |
 | ------------- | ------------------ | ------------------------------------ |
-| **Model**     | RoBERTa-base       | High accuracy for NLP classification |
-| **Vector DB** | FAISS              | Fast, lightweight, easy to deploy    |
-| **Cloud**     | GCS + Hugging Face | Scalability, separation of concerns  |
-| **Backend**   | FastAPI/Flask      | Lightweight, async-ready API layer   |
+|   Model       | RoBERTa-base       | High accuracy for NLP classification |
+|   Vector DB   | FAISS              | Fast, lightweight, easy to deploy    |
+|   Cloud       | GCS + Hugging Face | Scalability, separation of concerns  |
+|   Backend     | FastAPI/Flask      | Lightweight, async-ready API layer   |
 ```
 
 ### 8. **Demo Video**
