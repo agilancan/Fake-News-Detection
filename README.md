@@ -49,7 +49,7 @@ The backend handles **fake news classification**, **trusted source retrieval** f
 │   ├── scrape_sources.py   # Politifact, Snopes, Wikipedia scrapers
 │   ├── build_faiss.py      # Create FAISS index + metadata
 │   └── query_faiss.py      # Retrieve relevant trusted sources
-├── app.py                  # Flask/FastAPI backend API
+├── app.py                  # FastAPI backend API
 ├── requirements.txt
 └── README.md
 ```
@@ -109,7 +109,7 @@ API Hosting
 |   Model       | RoBERTa-base       | High accuracy for NLP classification |
 |   Vector DB   | FAISS              | Fast, lightweight, easy to deploy    |
 |   Cloud       | GCS + Hugging Face | Scalability, separation of concerns  |
-|   Backend     | FastAPI/Flask      | Lightweight, async-ready API layer   |
+|   Backend     | FastAPI            | Lightweight, async-ready API layer   |
 ```
 
 ### 8. **Demo Video**
