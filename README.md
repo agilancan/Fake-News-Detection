@@ -55,62 +55,62 @@ The backend handles **fake news classification**, **trusted source retrieval** f
 ```
 
 ### 5. **Setup & Installation**
-```
+
 1️⃣ Clone Repository
-git clone https://github.com/agilancan/Fake-News-Detection.git
-cd Fake-News-Detection
+- git clone https://github.com/agilancan/Fake-News-Detection.git
+- cd Fake-News-Detection
 
 2️⃣ Create Virtual Environment
-python -m venv venv
-source venv/bin/activate  # Mac/Linux
-venv\Scripts\activate     # Windows
+- python -m venv venv
+- source venv/bin/activate  # Mac/Linux
+- venv\Scripts\activate     # Windows
 
 3️⃣ Install Dependencies
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 4️⃣ Environment Variables
 
 Create a .env file:
-
-GCP_BUCKET_NAME=your-bucket
-GCP_CREDENTIALS_PATH=path/to/service_account.json
-HF_MODEL_REPO=your-username/fake-news-model
+- GCP_BUCKET_NAME=your-bucket
+- GCP_CREDENTIALS_PATH=path/to/service_account.json
+- HF_MODEL_REPO=your-username/fake-news-model
 
 🖥 Running the Backend Locally
-python app.py
-
+- python app.py
 
 The API will be available at http://127.0.0.1:8000
 
 Endpoints:
-
-POST /predict → Classify news article as Real/Fake
-
-POST /retrieve → Retrieve related verified sources
-
-POST /rag → Combined classification + retrieval
+- POST /predict → Classify news article as Real/Fake
+- POST /retrieve → Retrieve related verified sources
+- POST /rag → Combined classification + retrieval
 
 ☁️ Cloud Deployment
-Model Hosting
 
-Model pushed to Hugging Face Hub for external inference.
+Model Hosting
+- Model pushed to Hugging Face Hub for external inference.
 
 Vector Store Hosting
-
-FAISS index + metadata uploaded to Google Cloud Storage.
-
-Backend downloads and loads index at startup.
+- FAISS index + metadata uploaded to Google Cloud Storage.
+- Backend downloads and loads index at startup.
 
 API Hosting
+- Backend deployed on Render.
+- Connected to frontend hosted on Vercel.
 
-Backend deployed on Render.
-
-Connected to frontend hosted on Vercel.
-
-```
 ### 6. **Development Team**
--Backend, Model, RAG & Infrastructure => Agilan Sivakumaran, Rodrigo Rangel-alvarado
--Frontend, Intergration & Deployment => Thedyson eduard Luzon, Yash Patel
+- Backend, Model, RAG & Infrastructure => Agilan Sivakumaran, Rodrigo Rangel-alvarado
+- Frontend, Intergration & Deployment => Thedyson eduard Luzon, Yash Patel
 
-### 7. **Demo Video**
+### 7. **Development Team**
+```
+| Component     | Choice             | Reason                               |
+| ------------- | ------------------ | ------------------------------------ |
+| **Model**     | RoBERTa-base       | High accuracy for NLP classification |
+| **Vector DB** | FAISS              | Fast, lightweight, easy to deploy    |
+| **Cloud**     | GCS + Hugging Face | Scalability, separation of concerns  |
+| **Backend**   | FastAPI/Flask      | Lightweight, async-ready API layer   |
+```
+
+### 8. **Demo Video**
 [![Watch the video](https://img.youtube.com/vi/i7ZSjIbGSLk/hqdefault.jpg)](https://youtu.be/i7ZSjIbGSLk)
