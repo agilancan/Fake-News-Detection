@@ -112,3 +112,8 @@ API Hosting
 |   Backend     | FastAPI            | Lightweight, async-ready API layer   |
 ```
 
+### 8. **Screenshots**
+<p align="center"><img src="assets/3.PNG" width="600"/></p>
+<p align="center"><img src="assets/1.PNG" width="600"/></p>
+<p align="center"><img src="assets/2.PNG" width="600"/></p>
+<p align="center"><img src="assets/4.PNG" width="600"/></p>
