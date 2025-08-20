@@ -112,5 +112,3 @@ API Hosting
 |   Backend     | FastAPI            | Lightweight, async-ready API layer   |
 ```
 
-### 8. **Demo Video**
-[![Watch the video](https://img.youtube.com/vi/i7ZSjIbGSLk/hqdefault.jpg)](https://youtu.be/i7ZSjIbGSLk)
